@@ -1,0 +1,60 @@
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Asegura que el padding y el borde no afecten al tamaño total del los elementos */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.5; /*Espaciado entre lineas*/
+}
+h1, h2{
+    color: #333;
+}
+
+section{
+    padding: 40px;
+    margin: 20px 0;
+}
+
+/*Navegación*/
+nav{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position:sticky; /*Hace que la barra quede fija al hacer Scroll*/
+    top: 0; 
+    z-index: 100;
+
+}
+nav ul{
+    display: flex; /*Muestra los elemento en fila*/
+    justify-content: center;
+    list-style-type: none; 
+}
+
+nav ul li{
+    margin: 0 20px;
+
+}
+ nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    transition: color 0.5s ease; /*Transición suave*/
+
+ }
+
+ nav a:hover {
+    color: #25d366;
+    background-color: black;
+    border-radius: 5px;
+ }
+
+ /**<Seccion HERO/
+
+ 
