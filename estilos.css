@@ -17,7 +17,7 @@ h1, h2{
 
 section{
     padding: 40px;
-    margin: 20px 0;
+    margin: 0px 0;
 }
 
 /*Navegación*/
@@ -46,6 +46,8 @@ nav ul li{
     font-size: 18px;
     padding: 15px 20px;
     transition: color 0.5s ease; /*Transición suave*/
+    transition: background-color 0.3 ease;
+
 
  }
 
@@ -55,6 +57,77 @@ nav ul li{
     border-radius: 5px;
  }
 
- /**<Seccion HERO/
+ /**<Seccion HERO**/
+ #hero{
+    position: relative;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+ }
 
- 
+ .hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+
+ }
+ .hero-content h1{
+    font-size: 45px;
+    color: white;
+ }
+
+ .hero-content p{
+    font-size: 20px;
+    margin-top: 10px;
+ }
+
+ .cta-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3 ease;
+
+ }
+ .cta-button:hover{
+    background-color: #128c7e;
+ }
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+
+
+}
+.whatsapp-float img{
+    width: 40px;
+    height: 40px;
+}
+
+
