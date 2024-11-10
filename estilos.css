@@ -15,20 +15,25 @@ h1, h2{
     color: #333;
 }
 
+
 section{
     padding: 40px;
     margin: 0px 0;
 }
 
 /*Navegación*/
-nav{
-    background-color: #333;
-    color: white;
-    padding: 15px;
+header{
     position:sticky; /*Hace que la barra quede fija al hacer Scroll*/
     top: 0; 
     z-index: 100;
 
+}
+
+nav{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+   
 }
 nav ul{
     display: flex; /*Muestra los elemento en fila*/
@@ -129,5 +134,3 @@ nav ul li{
     width: 40px;
     height: 40px;
 }
-
-
